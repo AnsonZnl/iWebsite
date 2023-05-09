@@ -1,8 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# iWebsite
 
-## Getting Started
+通过Next.js构建的网站，可用于企业官网。
 
-First, run the development server:
+## 使用技术
+- create-next-app
+- Next.js
+- Tailwindicss
+- Vercel
+- next-connect
+- React-Qeury
+- Vercel Postgres
+- Prisma
+- JWT
+
+## 快速开始
+
+请运行一下命令启动服务:
 
 ```bash
 npm run dev
