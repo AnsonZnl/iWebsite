@@ -1,21 +1,23 @@
 # iWebsite
 
-通过Next.js构建的网站，可用于企业官网。
+通过Next.js构建的网站，可用于企业官网、毕业设计。
 
 ## 使用技术
-- create-next-app
+
+- Create-Next-App
 - Next.js
-- Tailwindicss
+- Tailwind CSS
 - Vercel
 - next-connect
 - React-Qeury
+- Vercel KV
 - Vercel Postgres
 - Prisma
 - JWT
 
 ## 快速开始
 
-请运行一下命令启动服务:
+请你预先安装好NodeJS(v16+)，clone此项目到您的本地，然后运行一下命令启动服务:
 
 ```bash
 npm run dev
@@ -25,23 +27,18 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+浏览器打开 [http://localhost:3000](http://localhost:3000) 即可看到页面
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 优点
+- 利于 SEO 搜索引擎收录
+- 加快首屏呈现时间
+- 同时拥有​​单页(SPA)​​​和​​多页路由​​的用户体验
 
-## Learn More
+## 更多功能
+- 响应式
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 在 Vercel 上部署
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+可以非常简单的在 Vercel 部署此项目，可以自定义域名，并且拥有一定免费限额的数据库空间。

@@ -1,26 +1,42 @@
 {
-  "name": "frontend",
-  "version": "0.1.0",
-  "private": true,
+  "name": "i-website",
+  "version": "1.0.0",
+  "description": "基于Next.js构建企业网站",
+  "main": "index.js",
   "scripts": {
     "dev": "next dev -p 3300",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint . --ext .jsx,.js,.ts,.tsx",
+    "format": "prettier --write '**/*.{ts,tsx,js,jsx}'"
   },
+  "keywords": [
+    "react",
+    "next.js"
+  ],
+  "author": "zhangningle",
+  "license": "MIT",
   "dependencies": {
-    "@types/node": "20.0.0",
-    "@types/react": "18.2.5",
-    "@types/react-dom": "18.2.3",
-    "@vercel/kv": "^0.1.1",
-    "autoprefixer": "10.4.14",
-    "eslint": "8.39.0",
-    "eslint-config-next": "13.4.0",
-    "next": "13.4.0",
-    "postcss": "8.4.23",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "tailwindcss": "3.3.2",
-    "typescript": "5.0.4"
+    "@types/node": "^17.0.14",
+    "@types/react": "^17.0.34",
+    "@types/react-dom": "^17.0.11",
+    "@vercel/kv": "^0.2.2",
+    "autoprefixer": "^10.4.16",
+    "next": "^12.0.10",
+    "postcss": "^8.4.5",
+    "react": "^18.0.3",
+    "react-dom": "^18.0.3",
+    "tailwindcss": "^3.0.7",
+    "typescript": "^4.5.4"
+  },
+  "devDependencies": {
+    "@prisma/client": "^4.13.0",
+    "@vercel/postgres": "^0.2.1",
+    "eslint": "^8.5.0",
+    "eslint-config-next": "^13.4.0",
+    "next-connect": "^1.0.0",
+    "prettier": "^2.5.1",
+    "prisma": "^4.13.0",
+    "react-query": "^3.22.0"
   }
 }
