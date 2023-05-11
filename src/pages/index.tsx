@@ -1,9 +1,9 @@
-import Header from "./../components/header";
+import Header from './../components/header'
 
 export default function Index() {
   return (
     <main className="">
-      <Header/>
+      <Header />
       <h1>Index</h1>
     </main>
   )
