@@ -1,6 +1,9 @@
+import Header from "./../components/header";
+
 export default function Index() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="">
+      <Header/>
       <h1>Index</h1>
     </main>
   )
