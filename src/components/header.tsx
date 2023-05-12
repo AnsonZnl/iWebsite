@@ -9,7 +9,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const currentRouter = routerList.find((e) => e.path === router.asPath)?.name
   return (
-    <nav className="bg-gray-100">
+    <nav className="bg-gray-100 border-y border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           {/* 左侧 logo */}

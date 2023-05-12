@@ -1,20 +1,29 @@
 export default function Footer() {
   return (
     <footer className="bg-gray-100 border-y border-gray-200">
-      <div className="mx-auto w-full max-w-screen-xl my-14 mb-20 px-4">
-        <div className="flex flex-col sm:flex-row gap-4 justify-between mb-12">
-          <div>
-            <h4 className="font-medium mb-4 text-sm">Legal</h4>
+      <div className="mx-auto w-full max-w-screen-xl my-6 px-4">
+        <div className="flex flex-col sm:flex-row gap-4 justify-between ">
+          <div className="">
+            <h4 className="font-medium mb-4 text-sm">
+              Copyright © {new Date().getFullYear()} Anson. All rights reserved.
+            </h4>
             <a
               className="text-gray-500 text-sm block mb-2 hover:text-gray-800 transition-colors duration-200"
               target="_blank"
-              href="https://vercel.com/legal/privacy-policy"
+              href="https://github.com/AnsonZnl/iWebsite"
             >
-              Privacy Policy
+              Github
+            </a>
+            <a
+              className="text-gray-500 text-sm block mb-2 hover:text-gray-800 transition-colors duration-200"
+              target="_blank"
+              href="https://www.zhangningle.top"
+            >
+              Blog
             </a>
           </div>
+          <div>夜间模式</div>
         </div>
-        <div className="flex flex-col-reverse items-start justify-between gap-4 sm:flex-row sm:items-center"></div>
       </div>
     </footer>
   )
