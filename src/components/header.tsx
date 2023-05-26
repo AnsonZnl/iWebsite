@@ -1,15 +1,26 @@
 import Image from 'next/image'
 import IwsLink from './IwsLink'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { router as routerList } from './../router'
 
 export default function Header() {
   const router = useRouter()
   const [isOpen, setIsOpen] = useState(false)
+  const [isDarkMode, setIsDarkMode] = useState(false)
   const currentRouter = routerList.find((e) => e.path === router.asPath)?.name
+
+  useEffect(() => {
+    setIsDarkMode(window.matchMedia('(prefers-color-scheme: dark)').matches)
+  }, [])
+
+  const toggleDark = () => {
+    const rootEle = document.getElementById('root')
+    rootEle?.classList.toggle('dark')
+    setIsDarkMode(!isDarkMode)
+  }
   return (
-    <nav className="bg-gray-100 border-y border-gray-200">
+    <nav className="bg-gray-100 border-y border-gray-200 dark:bg-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           {/* 左侧 logo */}
@@ -43,6 +54,18 @@ export default function Header() {
               >
                 关于我们
               </IwsLink>
+              <div
+                className="flex hover:bg-gray-200 hover:rounded-full"
+                onClick={() => toggleDark()}
+              >
+                <button
+                  type="button"
+                  aria-label="Use Dark Mode"
+                  className="active:scale-95 transition-transform flex w-12 h-12 rounded-full items-center justify-center hover:bg-primary/5 hover:dark:bg-primary-dark/5 outline-link"
+                >
+                  <img src={isDarkMode ? '/dark.svg' : '/ligth.svg'} alt="" />
+                </button>
+              </div>
             </div>
           </div>
           {/* 移动端折叠导航 */}
@@ -86,6 +109,16 @@ export default function Header() {
           >
             关于我们
           </IwsLink>
+
+          <div className="flex hover:bg-gray-200 hover:rounded-full" onClick={() => toggleDark()}>
+            <button
+              type="button"
+              aria-label="Use Dark Mode"
+              className="active:scale-95 transition-transform flex w-12 h-12 rounded-full items-center justify-center hover:bg-primary/5 hover:dark:bg-primary-dark/5 outline-link"
+            >
+              <img src={isDarkMode ? '/dark.svg' : '/ligth.svg'} alt="" />
+            </button>
+          </div>
         </div>
       </div>
     </nav>

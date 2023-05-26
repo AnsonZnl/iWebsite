@@ -23,9 +23,9 @@ export default function Index() {
     },
   ]
   return (
-    <main className="">
+    <main className="dark:bg-slate-800">
       <Header />
-      <div className="max-w-7xl mx-auto px-4 py-2 h-96">
+      <div className="max-w-7xl mx-auto px-4 py-2 h-96 ">
         <div className="relative h-full">
           <Image src="/banner.jpeg" alt="Banner" layout="fill" objectFit="cover" quality={100} />
           <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
@@ -47,7 +47,7 @@ export default function Index() {
       </div>
       <div className="max-w-7xl mx-auto px-4 py-16 from-gray-300 to-gray-700">
         <div className="py-2 text-center mb-4">
-          <h2 className="text-center text-xl mb-2">iWebsite 的优点</h2>
+          <h2 className="text-center text-xl mb-2 dark:text-gray-300">iWebsite 的优点</h2>
           <p className="text-xs text-gray-400">当然不止这些</p>
         </div>
         <div className="flex flex-wrap md:flex-nowrap justify-between mb-4 w-full">
@@ -57,7 +57,7 @@ export default function Index() {
                 className="h-1/2 md:h-1/4 mx-2 p-2 mb-8 md:mb-1 rounded-md shadow cursor-pointer hover:shadow-md"
                 key={item.title}
               >
-                <h3 className="text-center text-lg">{item.title}</h3>
+                <h3 className="text-center text-lg dark:text-gray-300">{item.title}</h3>
                 <p className="block p-4 text-sm text-gray-500 tracking-wider leading-6">
                   {item.descript}
                 </p>
