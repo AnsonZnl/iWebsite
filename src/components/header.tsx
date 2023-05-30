@@ -20,7 +20,7 @@ export default function Header() {
     setIsDarkMode(!isDarkMode)
   }
   return (
-    <nav className="bg-gray-100 border-y border-gray-200 dark:bg-slate-800">
+    <nav className="bg-gray-100 border-y border-gray-200 dark:bg-slate-800 dark:border-gray-600">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           {/* 左侧 logo */}
@@ -63,7 +63,12 @@ export default function Header() {
                   aria-label="Use Dark Mode"
                   className="active:scale-95 transition-transform flex w-12 h-12 rounded-full items-center justify-center hover:bg-primary/5 hover:dark:bg-primary-dark/5 outline-link"
                 >
-                  <img src={isDarkMode ? '/dark.svg' : '/ligth.svg'} alt="" />
+                  <Image
+                    src={isDarkMode ? '/dark.svg' : '/ligth.svg'}
+                    width="48"
+                    height="48"
+                    alt="dark"
+                  />
                 </button>
               </div>
             </div>
@@ -116,7 +121,12 @@ export default function Header() {
               aria-label="Use Dark Mode"
               className="active:scale-95 transition-transform flex w-12 h-12 rounded-full items-center justify-center hover:bg-primary/5 hover:dark:bg-primary-dark/5 outline-link"
             >
-              <img src={isDarkMode ? '/dark.svg' : '/ligth.svg'} alt="" />
+              <Image
+                src={isDarkMode ? '/dark.svg' : '/ligth.svg'}
+                width="48"
+                height="48"
+                alt="dark"
+              />
             </button>
           </div>
         </div>

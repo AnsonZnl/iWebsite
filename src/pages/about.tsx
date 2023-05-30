@@ -21,13 +21,13 @@ export default function About() {
     },
   ]
   return (
-    <main className="">
+    <main className="dark:bg-slate-800">
       <Header />
       <div className="max-w-7xl mx-auto p-4 h-[36rem]">
         {qaList.map((e) => {
           return (
             <div key={e.a} className="mb-4">
-              <h2 className="text-xl mb-2">{e.q}</h2>
+              <h2 className="text-xl mb-2 dark:text-gray-300">{e.q}</h2>
               <p className="text-sm text-gray-600">{e.a}</p>
             </div>
           )
