@@ -1,14 +1,9 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document'
-import { useEffect } from 'react'
 
 class MyDocument extends Document {
   render() {
-    let isDarkMode = false
-    useEffect(() => {
-      isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
-    }, [])
     return (
-      <Html lang="" className={isDarkMode ? 'dark' : ''}>
+      <Html lang="">
         <Head>
           <meta charSet="UTF-8" />
           {/* <meta name="viewport" content="width=device-width, initial-scale=1.0" /> */}
