@@ -1,15 +1,19 @@
 # iWebsite
 
 通过 Next.js 构建的网站，可用于企业官网、毕业设计。
+和[tailwind-nextjs-starter-blog](https://github.com/timlrx/tailwind-nextjs-starter-blog)的区别
+
+-
 
 ## 使用技术
 
 - Create-Next-App
 - Next.js
 - Tailwind CSS
-- Vercel
 - next-connect
+- next-theme
 - React-Qeury
+- Vercel
 - Vercel KV
 - Vercel Postgres
 - Prisma
@@ -37,7 +41,7 @@ pnpm dev
 
 ## 待开发功能
 
-- []夜间模式
+- [x]夜间模式-2023-06-01 完成，借助 next-theme
 - []中英双语
 - []中文文档
 - []英文文档
